@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_schoolDetails"
+            android:icon="@drawable/ic_school"
+            android:title="School Details" />
+        <item
+            android:id="@+id/nav_expenseTracker"
+            android:icon="@drawable/ic_money"
+            android:title="Expense Tracker" />
+        <item
+            android:id="@+id/nav_dailyEvents"
+            android:icon="@drawable/ic_events"
+            android:title="Daily Events" />
+        <item
+            android:id="@+id/nav_orderDelivery"
+            android:icon="@drawable/ic_order"
+            android:title="Order Delivery" />
+        <item
+            android:id="@+id/nav_adddReturns"
+            android:icon="@drawable/ic_returns"
+            android:title="Books Return" />
+        <item
+            android:id="@+id/nav_todo"
+            android:icon="@drawable/ic_todo"
+            android:title="TODO Remainders" />
+
+    </group>
+
+    <item android:title="Communicate" >
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_people"
+                android:title="About" />
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_email"
+                android:title="Contact" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="4dp"
+    android:orientation="vertical"
+    tools:context=".ExpenseActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#ffffff"
+            android:elevation="3dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Expense"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="3dp"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_weight="0.5"
+            android:layout_margin="3dp"
+            android:layout_height="wrap_content"
+            android:hint="Expense Name"
+            android:id="@+id/inpExpenseName"/>
+
+        <EditText
+            android:id="@+id/expamt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="2"
+            android:hint="Amount" />
+
+        <Button
+            android:id="@+id/add"
+            android:onClick="OnAddClick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundcorner_button"
+            android:textColor="#ffffff"
+            android:layout_margin="10dp"
+            android:text="Add Record" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Expenses"
+        android:padding="3dp"
+        android:background="@drawable/nav_gradient"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:layout_marginBottom="10dp"
+        android:textColor="#ffffff"
+        android:textAlignment="center"/>
+
+    <ListView
+        android:id="@+id/expensesview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

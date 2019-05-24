@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.viki.ssvmobile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name=".Appinfo"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".AdminMonthlyExpensesActivity"></activity>
+        <activity
+            android:name=".HomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.viki.ssvmobile.HomeActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ViewSchoolDetailsActivity" />
+        <activity android:name=".ExpenseActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.EXPENSEACTIVITY" />
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OrderDeliveryActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.ORDERDELIVERYACTIVITY" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AboutActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ABOUT" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ForgotPasswordActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.FORGOTPASSWORD" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ContactActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.CONTACTACTIVITY" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReturnBooksActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.RETURNBOOKACTIVITY" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DailyEventsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.EXPENSEACTIVITY" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ActiveRemaindersActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTIVITYREMAINDER" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AllModulesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ALLMODULES" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MarketingSchoolsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MARKETINGSCHOOLSACTIVITY" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddMarketingSchoolActivity" />
+        <activity android:name=".CreateOrderActivity" />
+        <activity android:name=".StockDetailsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.STOCKDETAILSACCTIVITY" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AddStockActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.ADDSTOCKACTIVITY" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DeleteStockActivity" />
+        <activity android:name=".OrderPaymentActivity" />
+        <activity android:name=".CreateZoneActivity" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:label="@string/title_activity_admin_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".SpecimenCopyActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.SPECIMENCOPYACTIVITY" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Remainder" />
+        <activity android:name=".AdminMilestonesActivity" />
+        <activity android:name=".AdminExpensesActivity" />
+        <activity android:name=".OnlyDisplayStockActivity" />
+        <activity android:name=".ExistingZonesActivity" />
+        <activity android:name=".AdminStaffUpdatesActivity" />
+        <activity android:name=".ZoneProfileActivity" />
+        <activity android:name=".AdminMarketingSchoolsActivity" />
+        <activity android:name=".AdminSchoolDetails" />
+        <activity android:name=".AdminOrderDetailsActivity" />
+        <activity android:name=".AdminPaymentsActivity" />
+        <activity android:name=".AdminLogsActivity" />
+        <activity android:name=".LogsActivity" />
+    </application>
+
+</manifest>
